@@ -1,0 +1,18 @@
+<html>
+  <head>
+    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+  </head>
+  <body>
+    <a-scene>
+      <a-assets>
+   <a-asset-item id="demotree" src="democrattree.gltf"></a-asset-item>
+   <a-asset-item id="repubtree" src="republicantree.gltf"></a-asset-item>
+      </a-assets>
+      <a-entity camera look-controls wasd-controls="acceleration:200" position="0 1.6 0" rotation="0 -90 0"></a-entity>
+      <a-plane height="1000" width="1000" rotation="-90 0 0" color="#8B8B8B"></a-plane>
+      <a-entity gltf-model="#demotree" position="10 3 -17" rotation="0 31.44 0"></a-entity>
+      <a-entity gltf-model="#repubtree" position="10 3 16" rotation="0 31.78 0"></a-entity>
+      <a-sky color="#ECECEC"></a-sky>
+    </a-scene>
+  </body>
+</html>
